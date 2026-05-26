@@ -1,0 +1,11 @@
+\documentclass[tikz,border=2mm]{standalone}
+\usepackage{circuitikz}
+\begin{document}
+\begin{circuitikz}[american]
+    \draw (0,0) to[V, l=$V_s$, invert] (0,3) -- (2,3)
+          to[R, l=$R_1$] (4,3) -- (4,0)
+          to[R, l=$R_2$] (0,0);
+    \draw (4,3) -- (6,3)
+          to[C, l=$C_1$] (6,0) -- (4,0);
+\end{circuitikz}
+\end{document}
